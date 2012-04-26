@@ -1,0 +1,33 @@
+var glue = require('../lib/glue.js'),
+	program = require('commander'),
+	options = {
+		new: false,
+		path: process.cwd(),
+		watch: false,
+		mini: false
+	};
+
+program
+	.version('0.0.1')
+	.option('-a, --all', 'Creates, glues, minifies and watches a new glue structure.')
+	.option('-n, --new', 'Create a glue structure on the current directory')
+	.option('-p, --path <path>', 'Path of the src folder')
+	.option('-w, --watch', 'Watch for changes and glues automagically')
+	.option('-m, --mini', 'Minify the glued css')
+	.parse(process.argv);
+
+if (program.new) options.new = true;
+if (program.path) options.path = program.path;
+if (program.watch) options.watch = true;
+if (program.mini) options.mini = true;
+
+if (program.all) {
+	options = {
+		new: true,
+		path: program.path || process.cwd(),
+		watch: true,
+		mini: true
+	};
+}
+
+glue(options);

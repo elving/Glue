@@ -1,0 +1,34 @@
+{
+    "name": "Glue",
+    "preferGlobal": "true",
+    "version": "0.0.1",
+    "author": "Elving Rodriguez <elving.pr@gmail.com>",
+    "description": "Glues your css @imports together into a single file.",
+    "bin": {
+        "glue": "./bin/glue"
+    },
+    "main": "./lib/glue",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elving/glue.git"
+    },
+    "keywords": [
+        "cli",
+        "css",
+        "@import",
+        "imports",
+        "modular",
+        "glue"
+    ],
+    "dependencies" : {
+        "commander":  "0.6.x",
+        "clean-css":  "0.3.x"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://github.com/elving/glue/raw/master/LICENSE"
+    }],
+    "engine": {
+        "node": ">=0.6"
+    }
+}
