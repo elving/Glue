@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var glue = require('../lib/glue.js'),
 	program = require('commander'),
 	options = {
