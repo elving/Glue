@@ -1,7 +1,7 @@
 {
     "name": "Glue",
     "preferGlobal": "true",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Elving Rodriguez <elving.pr@gmail.com>",
     "description": "Glues your css @imports together into a single file.",
     "bin": {
