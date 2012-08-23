@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/elving/Glue.png)](http://travis-ci.org/elving/Glue)
 #Glue
 
 Glues your css @imports together into a single file.
